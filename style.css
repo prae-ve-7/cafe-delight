@@ -1,0 +1,211 @@
+/* Apply Fonts */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f5f1ea; /* soft cream bg */
+  color: #3e2f23; /* dark brown text */
+}
+
+.navbar-brand img {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+
+h1, h2, h3, h5 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Hero Section Styling */
+#hero {
+  height: 60vh; /* or your preferred height */
+  background: linear-gradient(rgba(60, 40, 20, 0.6), rgba(60, 40, 20, 0.6)),
+              url(image/bghero.jpg) no-repeat center center/cover;
+              background-attachment: fixed;
+  color: #f1e9dc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);     
+  }
+
+#hero h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+#hero p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+/* Section Headings */
+section h2 {
+  font-family: 'Playfair Display', serif;
+  color: #5c3d2e;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #3e2f23;
+  color: #f5f1ea;
+}
+#about h2 {
+  font-size: 2.5rem;  /* Larger heading */
+}
+
+#about p {
+  font-size: 1.25rem;  /* Bigger paragraph */
+  max-width: 600px;
+  margin: 0 auto; /* Center paragraph */
+  line-height: 1.8;
+}
+
+
+#menu {
+  background-color: #f1e6d8;
+}
+
+.menu-item {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.menu-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  border-radius: 10px;
+}
+ 
+.menu-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(255, 2, 2, 0.759);
+  background-color: #f3ece7;
+}
+
+
+
+.image-wrapper img {
+  transition: transform 0.3s ease;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.image-wrapper:hover img {
+  transform: scale(1.04);
+}
+
+.image-wrapper img {
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover .image-wrapper img {
+  transform: scale(1.05);
+}
+
+
+#gallery {
+  background-color: #000000;
+  color: #f1e9dc;
+  padding: 60px 0;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.gallery-item img {
+  width: 90%;          /* Shrink image size inside the column */
+  height: auto;
+  margin: 0 auto;       /* Center image horizontally */
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(60, 40, 20, 0.6);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+#gallery {
+    background: linear-gradient(rgb(114 94 94 / 95%), rgb(91 90 90 / 95%)), url(image/gallerybg.jpg.png) no-repeat center center / cover;
+    padding: 60px 0;
+    background-attachment: fixed;
+}
+
+
+#contact {
+  background-color: #f1e6d8;
+}
+
+footer {
+  background-color: #3e2f23;
+  color: #ffffff; /* Keep text white for contrast */
+}
+
+#gallery img {
+  transition: transform 0.4s ease;
+}
+#gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Container remains the same */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+/* Lift the entire item up slightly on hover */
+.gallery-item:hover {
+  transform: translateY(-10px); /* moves up 10px */
+}
+
+/* Image transition stays smooth */
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.gallery-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+}
